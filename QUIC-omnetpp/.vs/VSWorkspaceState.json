@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\quic",
+    "\\src\\quic\\model",
+    "\\src\\quic\\model\\frames",
+    "\\src\\quic\\model\\headers",
+    "\\src\\quic\\model\\packets"
+  ],
+  "SelectedNode": "\\src\\quic\\model\\frames\\QuicFrame.h",
+  "PreviewInSolutionExplorer": false
+}
