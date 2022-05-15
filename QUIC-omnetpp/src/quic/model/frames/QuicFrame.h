@@ -40,7 +40,13 @@ enum FrameType {
     STREAMS_BLOCKED,
     NEW_TOKEN,
     HANDSHAKE_DONE,
-    PATH_RESPONSE
+    PATH_RESPONSE,
+    CLIENT_HELLO,
+    SERVER_HELLO,
+    ENCRYPTED_EXTENSIONS,
+    CERTIFICATE,
+    CERT_VERIFY,
+    FINISHED
 };
 class QuicFrame {
 public:

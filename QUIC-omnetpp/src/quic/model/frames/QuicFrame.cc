@@ -58,11 +58,32 @@ FrameType QuicFrame::getFrameType(char b) {
         return FrameType::APPLICATION_CLOSE;
     } else if (b == 0x1e) {
         return FrameType::HANDSHAKE_DONE;
+    } else if (b == 0x1e) {
+            return FrameType::CLIENT_HELLO;
+    } else if (b == 0x1e) {
+            return FrameType::SERVER_HELLO;
+    } else if (b == 0x1e) {
+            return FrameType::ENCRYPTED_EXTENSIONS;
+    } else if (b == 0x1e) {
+            return FrameType::CERTIFICATE;
+    } else if (b == 0x1e) {
+            return FrameType::CERT_VERIFY;
+    } else if (b == 0x1e) {
+            return FrameType::FINISHED;
     } else {
         throw std::invalid_argument( "Unknown FrameType value" );
     }
 
 }
+
+/*
+ *  CLIENT_HELLO,
+    SERVER_HELLO,
+    ENCRYPTED_EXTENSIONS,
+    CERTIFICATE,
+    CERT_VERIFY,
+    FINISHED
+ */
 
 QuicFrame::QuicFrame() {
     // TODO Auto-generated constructor stub
